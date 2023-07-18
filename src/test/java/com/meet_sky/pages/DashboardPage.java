@@ -1,27 +1,27 @@
 package com.meet_sky.pages;
 
 
-
-
 import com.meet_sky.utilities.BrowserUtils;
 import com.meet_sky.utilities.ConfigurationReader;
 import com.meet_sky.utilities.Driver;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.CacheLookup;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-import java.util.List;
-
-public abstract class BasePage {
-
-    public BasePage(){
+public class DashboardPage {
 
 
+    //lets make a change to try
 
-}}
+
+        public void clickMenuByText(String text){
+            String locator = "(//a[@aria-label='"+text+"'])[1]";
+            WebElement element = Driver.getDriver().findElement(By.xpath(locator));
+            element.click();
+        }
+
+
+
+}

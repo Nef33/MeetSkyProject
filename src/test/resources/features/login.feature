@@ -1,13 +1,17 @@
 @login
-Feature: Users should be able to login
+Feature:Users should be able to login
+  User Story:
+  As a user, I should be able to login with correct credentials. And dashboard should be displayed.
 
-  Background: User is already in the log in page
-    Given the user is on the login page
+  Background:
+    Given user is on the login page
 
-@wip
-  Scenario: Verify login with different user types
-    Given the user logged in as "<userType>"
-    Given the user logged in with username as "User1" and password as "UserUser123"
+  Scenario: Login as a user
+
+
+
+    When user enters the user information
+    Then user should be able to login and see "Dashboard" as a title
 
 
 
