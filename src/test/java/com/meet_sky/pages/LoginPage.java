@@ -1,7 +1,7 @@
-package com.project_name.pages;
+package com.meet_sky.pages;
 
 
-import com.fleet.utilities.Driver;
+import com.meet_sky.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,26 +9,23 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPage {
 
     public LoginPage(){
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
+          PageFactory.initElements(Driver.getDriver(), this);
+}
 
-    @FindBy(id="prependedInput")
-    public WebElement userName;
+    @FindBy(xpath = "//input[@name='user']")
+    public WebElement username;
 
-
-
-    @FindBy(id="prependedInput2")
+    @FindBy(id="password")
     public WebElement password;
 
-    @FindBy(name = "_submit")
-    public WebElement submit;
+    @FindBy(id = "submit-form")
+    public WebElement logInBtn;
+
+    public void login(String user, String pass) {
+        username.sendKeys(user);
+        password.sendKeys(pass);
+        logInBtn.click();
 
 
-    public void login(String userNameStr, String passwordStr) {
-        userName.sendKeys(userNameStr);
-        password.sendKeys(passwordStr);
-        submit.click();
-        // verification that we logged
     }
-
 }
