@@ -15,7 +15,6 @@ public class DashboardPage {
 
     //lets make a change to try
 
-
         public void clickMenuByText(String text){
             String locator = "(//a[@aria-label='"+text+"'])[1]";
             WebElement element = Driver.getDriver().findElement(By.xpath(locator));
