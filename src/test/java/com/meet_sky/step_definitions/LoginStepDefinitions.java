@@ -19,6 +19,7 @@ public class LoginStepDefinitions {
     public void user_enters_the_user_information() {
         loginPage.login(ConfigurationReader.getProperty("user"), ConfigurationReader.getProperty("pass"));
 
+
     }
 
     @Then("user should be able to login and see {string} as a title")
