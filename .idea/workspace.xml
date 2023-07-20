@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ee59464-d0a5-4c71-a0ce-6604dddc1548" name="Changes" comment="comment">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/FolderPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/FolderFunctionalityStepDefenitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/folderFunctionality.feature" afterDir="false" />
+    <list default="true" id="6ee59464-d0a5-4c71-a0ce-6604dddc1548" name="Changes" comment="Finished first acceptance criteria sort by name, bug found">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/FolderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/FolderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/FolderFunctionalityStepDefenitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/FolderFunctionalityStepDefenitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/folderFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/folderFunctionality.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="KEEP" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,7 +71,26 @@
       <recent name="C:\Users\NefiseKaya\OneDrive - SPR Consulting\Desktop\MeetSkyProject\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CukesRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: User can change folder view order by Name">
+    <configuration name="Feature: folderFunctionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/folderFunctionality.feature" />
+      <option name="GLUE" value="com.meet_sky.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="MeetSkyProject" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: folderFunctionality" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
@@ -80,6 +99,46 @@
       <module name="MeetSkyProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User can change folder view order by Name" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/folderFunctionality.feature" />
+      <option name="GLUE" value="com.meet_sky.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="MeetSkyProject" />
+      <option name="NAME_FILTER" value="^User can change folder view order by Name$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User can change folder view order by Name$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User can change folder view order by Name" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: User can change folder view order by Size." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/folderFunctionality.feature" />
+      <option name="GLUE" value="com.meet_sky.step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="MeetSkyProject" />
+      <option name="NAME_FILTER" value="^User can change folder view order by Size\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User can change folder view order by Size\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: User can change folder view order by Size." />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -108,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: User can change folder view order by Name" />
+        <item itemvalue="Cucumber Java.Feature: folderFunctionality" />
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber Java.Scenario: User can change folder view order by Size." />
         <item itemvalue="Cucumber Java.Feature: login" />
-        <item itemvalue="JUnit.CukesRunner" />
-        <item itemvalue="Cucumber Java.Feature: login" />
-        <item itemvalue="JUnit.CukesRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +184,9 @@
       <option name="presentableId" value="Default" />
       <updated>1689693029685</updated>
       <workItem from="1689693031153" duration="9398000" />
-      <workItem from="1689726448339" duration="9661000" />
+      <workItem from="1689726448339" duration="19970000" />
+      <workItem from="1689803005294" duration="24001000" />
+      <workItem from="1689850938883" duration="24290000" />
     </task>
     <task id="LOCAL-00001" summary="comment">
       <created>1689714957701</created>
@@ -134,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689714957701</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished first acceptance criteria sort by name, bug found">
+      <created>1689736388042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689736388042</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +219,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="US010_alina" />
+                        <option value="origin/US010_alina" />
                       </list>
                     </value>
                   </entry>
@@ -165,6 +233,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment" />
+    <MESSAGE value="Finished first acceptance criteria sort by name, bug found" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished first acceptance criteria sort by name, bug found" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
