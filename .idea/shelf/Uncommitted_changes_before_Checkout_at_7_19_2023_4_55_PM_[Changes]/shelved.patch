@@ -1,0 +1,115 @@
+Index: src/test/java/com/meet_sky/runners/CukesRunner.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.meet_sky.runners;\r\n\r\nimport io.cucumber.junit.Cucumber;\r\nimport io.cucumber.junit.CucumberOptions;\r\nimport org.junit.runner.RunWith;\r\n\r\n@RunWith(Cucumber.class)\r\n@CucumberOptions(\r\n        plugin = {\r\n                \"html:target/cucumber-reports.html\",\r\n                \"rerun:target/rerun.txt\",\r\n                \"me.jvt.cucumber.report.PrettyReports:target/cucumber\",\r\n                \"json:target/cucumber.json\"\r\n        },\r\n        features = \"src/test/resources/features\",\r\n        glue = \"com/meet_sky/step_definitions\",\r\n        dryRun = false,\r\n        tags = \"@B29G23-141\",\r\n        publish = true //generating a report with public link\r\n)\r\npublic class CukesRunner {}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/com/meet_sky/runners/CukesRunner.java b/src/test/java/com/meet_sky/runners/CukesRunner.java
+--- a/src/test/java/com/meet_sky/runners/CukesRunner.java	(revision 74701e9987fc0e9938e6f450035d08ecaa4aecc1)
++++ b/src/test/java/com/meet_sky/runners/CukesRunner.java	(date 1689790682359)
+@@ -15,7 +15,7 @@
+         features = "src/test/resources/features",
+         glue = "com/meet_sky/step_definitions",
+         dryRun = false,
+-        tags = "@B29G23-141",
++        tags = "@wip",
+         publish = true //generating a report with public link
+ )
+ public class CukesRunner {}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6ee59464-d0a5-4c71-a0ce-6604dddc1548\" name=\"Changes\" comment=\"comment\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/com/meet_sky/pages/ActivityPage.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/ActivityStepDefinition.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/resources/features/ActivityFunctionality.feature\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/meet_sky/pages/DashboardPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/meet_sky/pages/DashboardPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/meet_sky/utilities/BrowserUtils.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/com/meet_sky/utilities/BrowserUtils.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2SkaRk6oozyAj7hBpQFTZFKMTHq\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollFromSource\" value=\"true\" />\r\n    <option name=\"autoscrollToSource\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/maksy/IdeaProjects/MeetSkyProject/src/test/resources/features\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\maksy\\IdeaProjects\\MeetSkyProject\\src\\test\\resources\\features\" />\r\n      <recent name=\"C:\\Users\\NefiseKaya\\OneDrive - SPR Consulting\\Desktop\\MeetSkyProject\" />\r\n      <recent name=\"C:\\Users\\NefiseKaya\\OneDrive - SPR Consulting\\Desktop\\MeetSkyProject\\src\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.CukesRunner\">\r\n    <configuration name=\"Feature: login\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/login.feature\" />\r\n      <option name=\"GLUE\" value=\"com.meet_sky.step_definitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"MeetSkyProject\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Feature: login\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"Scenario: User sees &quot;No more events to load&quot; message at the end of &quot;All Activities&quot; tab\" type=\"CucumberJavaRunConfigurationType\" factoryName=\"Cucumber java\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"CUCUMBER_CORE_VERSION\" value=\"5\" />\r\n      <option name=\"FILE_PATH\" value=\"$PROJECT_DIR$/src/test/resources/features/activity.feature\" />\r\n      <option name=\"GLUE\" value=\"com.meet_sky.step_definitions\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"io.cucumber.core.cli.Main\" />\r\n      <module name=\"MeetSkyProject\" />\r\n      <option name=\"NAME_FILTER\" value=\"^User sees \\&quot;No more events to load\\&quot; message at the end of \\&quot;All Activities\\&quot; tab$\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User sees \\&quot;No more events to load\\&quot; message at the end of \\&quot;All Activities\\&quot; tab$&quot;\" />\r\n      <option name=\"SUGGESTED_NAME\" value=\"Scenario: User sees &quot;No more events to load&quot; message at the end of &quot;All Activities&quot; tab\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_WORKING_DIR$\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"io.cucumber.core.cli.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"CukesRunner\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"MeetSkyProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.meet_sky.runners.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.meet_sky.runners\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.meet_sky.runners.CukesRunner\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"FailedTestRunner\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"MeetSkyProject\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.meet_sky.runners.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.meet_sky.runners\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.meet_sky.runners.FailedTestRunner\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.CukesRunner\" />\r\n        <item itemvalue=\"Cucumber Java.Scenario: User sees &quot;No more events to load&quot; message at the end of &quot;All Activities&quot; tab\" />\r\n        <item itemvalue=\"JUnit.FailedTestRunner\" />\r\n        <item itemvalue=\"Cucumber Java.Feature: login\" />\r\n        <item itemvalue=\"JUnit.CukesRunner\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6ee59464-d0a5-4c71-a0ce-6604dddc1548\" name=\"Changes\" comment=\"\" />\r\n      <created>1689693029685</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1689693029685</updated>\r\n      <workItem from=\"1689693031153\" duration=\"9398000\" />\r\n      <workItem from=\"1689722973439\" duration=\"14655000\" />\r\n      <workItem from=\"1689740933315\" duration=\"421000\" />\r\n      <workItem from=\"1689769596617\" duration=\"20115000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"comment\">\r\n      <created>1689714957701</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1689714957701</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"US011_maksym\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"comment\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"comment\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 74701e9987fc0e9938e6f450035d08ecaa4aecc1)
++++ b/.idea/workspace.xml	(date 1689799450691)
+@@ -4,14 +4,9 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="6ee59464-d0a5-4c71-a0ce-6604dddc1548" name="Changes" comment="comment">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/ActivityPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/ActivityStepDefinition.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ActivityFunctionality.feature" afterDir="false" />
++    <list default="true" id="6ee59464-d0a5-4c71-a0ce-6604dddc1548" name="Changes" comment="User story US-011 complete writing code">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/DashboardPage.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/utilities/BrowserUtils.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -50,20 +45,20 @@
+     <option name="autoscrollToSource" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "last_opened_file_path": "C:/Users/maksy/IdeaProjects/MeetSkyProject/src/test/resources/features",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/maksy/IdeaProjects/MeetSkyProject/src/test/resources/features&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\maksy\IdeaProjects\MeetSkyProject\src\test\resources\features" />
+@@ -162,7 +157,8 @@
+       <workItem from="1689693031153" duration="9398000" />
+       <workItem from="1689722973439" duration="14655000" />
+       <workItem from="1689740933315" duration="421000" />
+-      <workItem from="1689769596617" duration="20115000" />
++      <workItem from="1689769596617" duration="22552000" />
++      <workItem from="1689794073837" duration="1702000" />
+     </task>
+     <task id="LOCAL-00001" summary="comment">
+       <created>1689714957701</created>
+@@ -171,7 +167,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1689714957701</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="User story US-011 complete writing code">
++      <created>1689790217561</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1689790217561</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -202,6 +205,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="comment" />
+-    <option name="LAST_COMMIT_MESSAGE" value="comment" />
++    <MESSAGE value="User story US-011 complete writing code" />
++    <option name="LAST_COMMIT_MESSAGE" value="User story US-011 complete writing code" />
+   </component>
+ </project>
+\ No newline at end of file
