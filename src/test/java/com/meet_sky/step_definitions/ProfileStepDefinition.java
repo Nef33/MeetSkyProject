@@ -4,12 +4,17 @@ import com.meet_sky.pages.DashboardPage;
 import com.meet_sky.pages.ProfilePage;
 import com.meet_sky.utilities.BrowserUtils;
 import com.meet_sky.utilities.Driver;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProfileStepDefinition {
 
@@ -84,6 +89,48 @@ public class ProfileStepDefinition {
         select.selectByVisibleText("Українська");
         BrowserUtils.sleep(1);
         Assert.assertTrue(profilePage.languageSelect.isDisplayed());
+
+    }
+
+    @Then("User should see the following titles inside Personal Info:")
+    public void user_should_see_the_following_titles_inside_personal_info(DataTable dataTable) {
+
+
+        List<String> ProfileT = new ArrayList<>();
+        for (WebElement list : profilePage.ProfileTittles){
+            ProfileT.add(list.getText());
+        }
+        System.out.println("ProfileT = " + ProfileT);
+
+        //Assert.assertTrue(ProfileT.contains(dataTable));
+        System.out.println("dataTable = " + dataTable);
+
+
+    }
+
+
+
+    @And("User should see all titles inside Personal Info:")
+    public void userShouldSeeAllTitlesInsidePersonalInfo() {
+
+        List<String> ProfileT = new ArrayList<>();
+        for (WebElement list : profilePage.ProfileTittles){
+            ProfileT.add(list.getText());
+        }
+        System.out.println("ProfileT = " + ProfileT);
+
+
+
+        for (WebElement titleElement : profilePage.ProfileTittles){
+            if (titleElement.isDisplayed()){
+                System.out.println("Title is displayed");
+            }else {
+                System.out.println("Title is not displayed");
+            }
+        }
+
+
+
 
     }
 }

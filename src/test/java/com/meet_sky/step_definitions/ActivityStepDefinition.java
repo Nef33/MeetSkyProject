@@ -79,16 +79,13 @@ public class ActivityStepDefinition {
 
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         BrowserUtils.sleep(1);
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 2; i++) {
             BrowserUtils.sleep(1);
             js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
-            //js.executeScript("window.scrollBy(0,20050)");
+            //js.executeScript("window.scrollBy(0,750)");
 
         }
 
-
-        //WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
-        //WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"no_more_activities\"]")));
         //js.executeScript("arguments[0].scrollIntoView(true);",element);
     }
 

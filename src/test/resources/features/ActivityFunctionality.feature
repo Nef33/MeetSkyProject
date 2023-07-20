@@ -8,7 +8,7 @@ Feature: US-011 Activity Functionality
     When user enters the user information
     Then user should be able to login and see "Dashboard" as a title
 
-	#   
+
   @B29G23-139
   Scenario: User can see listed items under the Activity module
     Given the user is on the Activity module

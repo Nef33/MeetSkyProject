@@ -11,7 +11,6 @@ Feature:US-014 Check/Change Profile Settings Functionality
 
   @B29G23-143
   Scenario: Full name and username should be the same
-
     When user on the Profile module
     And user navigate to the Profile module
     Then user Full name and username should be the same.
@@ -29,6 +28,14 @@ Feature:US-014 Check/Change Profile Settings Functionality
   Scenario: User can change Language
     When user on the Profile module
     Then user select a different language from the Language dropdown and language preference should be updated
+
+  @B29G23-150
+  Scenario: User can see all titles in Personal Info
+    When user on the Profile module
+    And user navigate to the Profile module
+    And User should see all titles inside Personal Info:
+
+
 
 
 

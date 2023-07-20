@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ee59464-d0a5-4c71-a0ce-6604dddc1548" name="Changes" comment="add Background for Scenarios">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/ProfileStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ProfileSettingsFunctionality.feature" afterDir="false" />
+    <list default="true" id="6ee59464-d0a5-4c71-a0ce-6604dddc1548" name="Changes" comment="US - 014 and US - 011 Complete code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/DashboardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/ActivityStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/ActivityStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/ProfileStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/step_definitions/ProfileStepDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/ActivityFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ActivityFunctionality.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ProfileSettingsFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ProfileSettingsFunctionality.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +161,8 @@
       <option name="presentableId" value="Default" />
       <updated>1689693029685</updated>
       <workItem from="1689693031153" duration="9398000" />
-      <workItem from="1689861351426" duration="5960000" />
+      <workItem from="1689861351426" duration="6982000" />
+      <workItem from="1689877718664" duration="10916000" />
     </task>
     <task id="LOCAL-00001" summary="comment">
       <created>1689714957701</created>
@@ -176,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689801263203</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="US - 014 and US - 011 Complete code">
+      <created>1689867803370</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689867803370</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +202,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/US014-maksym" />
+                        <option value="US014-maksym" />
                       </list>
                     </value>
                   </entry>
@@ -208,6 +217,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="comment" />
     <MESSAGE value="add Background for Scenarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Background for Scenarios" />
+    <MESSAGE value="US - 014 and US - 011 Complete code" />
+    <option name="LAST_COMMIT_MESSAGE" value="US - 014 and US - 011 Complete code" />
   </component>
 </project>
