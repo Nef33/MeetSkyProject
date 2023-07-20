@@ -34,19 +34,21 @@ public class ActivityStepDefinition {
         dashboardPage.clickMenuByText("Activity");
 
     }
+
     @When("the user views the listed items")
     public void the_user_views_the_listed_items() {
 
         Assert.assertTrue(activityPage.allActivities.isDisplayed());
 
     }
+
     @Then("the user should be able to see all items")
     public void the_user_should_be_able_to_see_all_items() {
 
         for (WebElement eachActivity : activityPage.eachActivities) {
-            if (eachActivity.isDisplayed()){
+            if (eachActivity.isDisplayed()) {
                 System.out.println("Pass");
-            }else {
+            } else {
                 System.out.println("Fail");
             }
 
@@ -58,9 +60,8 @@ public class ActivityStepDefinition {
     public void the_user_should_see_the_items_ordered_by_newest_to_oldest() {
 
 
-
         List<String> times = new ArrayList<>();
-        for (WebElement time : activityPage.allDates){
+        for (WebElement time : activityPage.allDates) {
             times.add(time.getText());
         }
         System.out.println("dateStrings = " + times);
@@ -68,9 +69,8 @@ public class ActivityStepDefinition {
         List<String> sortedDates = new ArrayList<>(times);
         Collections.max(sortedDates);
         System.out.println("sortedDates = " + sortedDates);
-        Assert.assertEquals(times,sortedDates);
+        Assert.assertEquals(times, sortedDates);
     }
-
 
 
     @When("the user scrolls to the end of the All Activities tab")
@@ -79,14 +79,16 @@ public class ActivityStepDefinition {
 
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         BrowserUtils.sleep(1);
-        for (int i = 0; i < 25; i++) {
+        for (int i = 0; i < 30; i++) {
             BrowserUtils.sleep(1);
-            js.executeScript("window.scrollBy(0,20050)");
+            js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+            //js.executeScript("window.scrollBy(0,20050)");
 
         }
 
+
         //WebDriverWait wait = new WebDriverWait(Driver.getDriver(),Duration.ofSeconds(10));
-        //WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id="no_more_activities"]")));
+        //WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"no_more_activities\"]")));
         //js.executeScript("arguments[0].scrollIntoView(true);",element);
     }
 
@@ -95,7 +97,7 @@ public class ActivityStepDefinition {
     public void theUserShouldSeeTheMessage(String expectedMessage) {
 
         String actualMessage = activityPage.NoMoreEventsToLoadMessage.getText();
-        Assert.assertEquals(actualMessage,expectedMessage);
+        Assert.assertEquals(actualMessage, expectedMessage);
 
     }
 }
