@@ -419,7 +419,7 @@ public List<String> datessorted(){
         reversedsortedSizes.addAll(reversedsortedStringList);
         reversedsortedSizes.addAll(reversedsortedStringList1);
         reversedsortedSizes.addAll(reversedsortedStringList3);
-        reversedsortedSizes.addAll(reversedsortedStringList2);
+        reversedsortedSizes.addAll(reversedsortedStringList2) ;
 
 
 
