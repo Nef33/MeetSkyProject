@@ -368,6 +368,7 @@ public List<String> datessorted(){
         }
         // Step 2: Sort the list of integers in ascending order
         Collections.sort(reversedintegerList);
+        Collections.reverse(reversedintegerList);
         // Step 3: Optionally, convert the list of integers back to a list of strings
         List<String> reversedsortedStringList = new ArrayList<>();
         for (int num : reversedintegerList) {
@@ -379,7 +380,8 @@ public List<String> datessorted(){
             reversedintegerList1.add(Integer.parseInt(str));
         }
         // Step 2: Sort the list of integers in ascending order
-        Collections.sort(reversedintegerList1);
+        Collections.reverse(reversedintegerList1);
+        Collections.reverse(reversedintegerList1);
         // Step 3: Optionally, convert the list of integers back to a list of strings
         List<String> reversedsortedStringList1 = new ArrayList<>();
         for (int num : reversedintegerList1) {
@@ -392,6 +394,7 @@ public List<String> datessorted(){
         }
         // Step 2: Sort the list of integers in ascending order
         Collections.sort(reversedintegerList2);
+        Collections.reverse(reversedintegerList2);
         // Step 3: Optionally, convert the list of integers back to a list of strings
         List<String> reversedsortedStringList2 = new ArrayList<>();
         for (int num : reversedintegerList2) {
@@ -403,17 +406,22 @@ public List<String> datessorted(){
         }
         // Step 2: Sort the list of integers in ascending order
         Collections.sort(reversedintegerList3);
+        Collections.reverse(reversedintegerList3);
+
+
+
         // Step 3: Optionally, convert the list of integers back to a list of strings
         List<String> reversedsortedStringList3 = new ArrayList<>();
         for (int num : reversedintegerList3) {
             reversedsortedStringList3.add(String.valueOf(num));}
         //////////////////////////////////
 
-
-        reversedsortedSizes.addAll(reversedsortedStringList1);
-        reversedsortedSizes.addAll(reversedsortedStringList2);
         reversedsortedSizes.addAll(reversedsortedStringList);
+        reversedsortedSizes.addAll(reversedsortedStringList1);
         reversedsortedSizes.addAll(reversedsortedStringList3);
+        reversedsortedSizes.addAll(reversedsortedStringList2);
+
+
 
 
 
