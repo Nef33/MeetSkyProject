@@ -19,12 +19,6 @@ import java.util.List;
 public class DashboardStepDefinitions {
 
     DashboardPage dashboardPage=new DashboardPage();
-    LoginPage loginPage=new LoginPage();
-
-    @Given("user already logged in")
-    public void userAlreadyLoggedIn() {
-        loginPage.login(ConfigurationReader.getProperty("user"), ConfigurationReader.getProperty("pass"));
-    }
 
     @When("each module displays on the dashboard page")
     public void each_module_displays_on_the_dashboard_page() throws InterruptedException {
