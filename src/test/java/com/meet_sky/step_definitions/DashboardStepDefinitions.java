@@ -64,6 +64,44 @@ public class DashboardStepDefinitions {
     }
 
 
+    @Then("user should be able to select on each widget")
+    public void userShouldBeAbleToSelectOnEachWidget() throws InterruptedException {
+
+        for (WebElement eachWidget : dashboardPage.widgets) {
+
+            if(!(eachWidget.isEnabled())) {
+                eachWidget.click();
+            }
+
+            Thread.sleep(4);
+        }
+        for (WebElement widget : dashboardPage.widgets) {
+            Assert.assertTrue(widget.isEnabled());
+
+        }
+    }
+
+    @When("user clicks on Status button")
+    public void userClicksOnStatusButton() {
+        dashboardPage.statusButton.click();
+
+    }
+
+    @Then("user is able to select any status option")
+    public void userIsAbleToSelectAnyStatusOption() {
+        dashboardPage.awayStatus.click();
+
+        dashboardPage.setStatusButton.click();
+
+
+    }
+
+    @Then("user is able to see the selected status on dashboard")
+    public void userIsAbleToSeeTheSelectedStatusOnDashboard() {
+      String actualStatus=  dashboardPage.statusButton.getText();
+        Assert.assertEquals("Away",actualStatus);
+
+    }
 }
 
 

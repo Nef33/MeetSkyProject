@@ -30,7 +30,18 @@ public class DashboardPage {
     @FindBy(xpath = "//*[@id=\"app-dashboard\"]/div[2]/a")
     public WebElement CustomizeButton;
 
-    @FindBy(xpath = "//div[@id=\"status-status\"]")
+
+
+    @FindBy(xpath="//label[@for]")
+    public List<WebElement> widgets;
+
+    @FindBy(xpath="//*[@id=\"status-status\"]/li/div/button")
+    public WebElement statusButton;
+
+    @FindBy(xpath="//label[@class='user-status-online-select__label icon-user-status-away']")
+    public WebElement awayStatus;
+
+    @FindBy(xpath="//button[@text='Set status message']")
     public WebElement setStatusButton;
 
 
