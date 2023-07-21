@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ee59464-d0a5-4c71-a0ce-6604dddc1548" name="Changes" comment="madechanges to tast case 2">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/FolderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/pages/FolderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/NefiseKaya/OneDrive - SPR Consulting/Desktop/MeetSkyProject&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alina/IdeaProjects/MeetSkyProject/src/test/resources/features&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,11 +65,12 @@
       <recent name="com.meet_sky.step_definitions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alina\IdeaProjects\MeetSkyProject\src\test\resources\features" />
       <recent name="C:\Users\NefiseKaya\OneDrive - SPR Consulting\Desktop\MeetSkyProject" />
       <recent name="C:\Users\NefiseKaya\OneDrive - SPR Consulting\Desktop\MeetSkyProject\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FailedTestRunner">
+  <component name="RunManager" selected="JUnit.CukesRunner">
     <configuration name="Feature: folderFunctionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/folderFunctionality.feature" />
@@ -160,8 +162,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FailedTestRunner" />
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="JUnit.FailedTestRunner" />
         <item itemvalue="Cucumber Java.Scenario: User can change folder view order by Name" />
         <item itemvalue="Cucumber Java.Feature: folderFunctionality" />
         <item itemvalue="Cucumber Java.Scenario: User can change folder view order by Size." />
@@ -179,7 +181,7 @@
       <workItem from="1689693031153" duration="9398000" />
       <workItem from="1689726448339" duration="19970000" />
       <workItem from="1689803005294" duration="24001000" />
-      <workItem from="1689850938883" duration="27935000" />
+      <workItem from="1689850938883" duration="30124000" />
     </task>
     <task id="LOCAL-00001" summary="comment">
       <created>1689714957701</created>
@@ -209,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689907211666</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="madechanges to tast case 2">
+      <created>1689907411181</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689907411181</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,7 +235,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/US010_alina" />
+                        <option value="US010_alina" />
                       </list>
                     </value>
                   </entry>
@@ -244,5 +253,16 @@
     <MESSAGE value="Finished first all scenarios" />
     <MESSAGE value="madechanges to tast case 2" />
     <option name="LAST_COMMIT_MESSAGE" value="madechanges to tast case 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/meet_sky/runners/CukesRunner.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
