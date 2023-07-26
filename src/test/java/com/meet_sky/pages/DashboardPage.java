@@ -50,6 +50,14 @@ public class DashboardPage {
         WebElement element = Driver.getDriver().findElement(By.xpath(locator));
         element.click();
     }
+    @FindBy(id = "expand")
+    public WebElement ProfileButton;
+
+    @FindBy(id = "expanddiv")
+    public WebElement MenuButton;
+
+    @FindBy(xpath = "//*[@id=\"expanddiv\"]/ul/li[1]/div/a[1]/div[1]/div[1]")
+    public  WebElement UserName;
 
 
 }
